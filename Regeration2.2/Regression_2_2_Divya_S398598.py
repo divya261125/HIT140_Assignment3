@@ -49,7 +49,7 @@ required_cols = id_cols + [target_col] + features
 # Read and check the dataset.
 if not data_file.exists():
     raise FileNotFoundError(
-        "Place Regression_2_2_Dataset.csv in the same folder as this Python file."
+        "Dataset not found at ../Data/Regression_2_2_Dataset.csv."
     )
 
 data = pd.read_csv(data_file)
