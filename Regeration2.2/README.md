@@ -1,4 +1,4 @@
-# HIT140 Assessment 3: Regression 2.2 (Divya, S398598)
+# HIT140 Assessment 3: Regression 2.2 
 
 Predicts the goals scored by one team in one FIFA World Cup 2026 match, using eight
 predictors that are all known before kickoff.
