@@ -1,0 +1,11 @@
+Check,Result,Detail
+Independent source has 104 World Cup 2026 matches,PASS,104 matches found
+All 208 team rows match the independent goals record,PASS,208/208 rows match
+Total goals agree,PASS,"dataset 308, source 308"
+Shoot-out ties are stored as draws (shoot-out goals excluded),PASS,4/4 shoot-out matches stored as draws
+Matches played recomputed from earlier dates,PASS,208/208 rows match
+Rest days recomputed from earlier dates,PASS,208/208 rows match
+Opponent columns mirror the paired row,PASS,rank and Elo checked for all 208 rows
+Rank and Elo fixed for each team throughout the tournament,PASS,one value per team
+FIFA ranks match the 11 June 2026 release,PASS,10/10 stated positions match
+Elo matches eloratings.net for 8 teams spanning the range,PASS,8/8 teams match

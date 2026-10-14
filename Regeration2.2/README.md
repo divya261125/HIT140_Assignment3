@@ -7,8 +7,8 @@ predictors that are all known before kickoff.
 
 ```
 Data/Regression_2_2_Dataset.csv            208 rows: 104 matches x 2 teams
-Regression2.2/Regression_2_2_Divya_S398598.py
-Regression2.2/Regression_2_2_outputs/       created when the script runs
+Regeration2.2/Regression_2_2_Divya_S398598.py
+Regeration2.2/Regression_2_2_outputs/       created when the script runs
 requirements.txt
 ```
 
@@ -19,7 +19,7 @@ this layout.
 
 ```bash
 pip install -r requirements.txt
-python Regression2.2/Regression_2_2_Divya_S398598.py
+python Regeration2.2/Regression_2_2_Divya_S398598.py
 ```
 
 Runtime is about a minute. All models use `random_state=42`. The script prints
@@ -64,9 +64,29 @@ these files to `Regression_2_2_outputs/`:
 | Columns | Source |
 |---|---|
 | `Team_FIFA_Rank`, `Opponent_FIFA_Rank` | FIFA/Coca-Cola Men's World Ranking released 11 June 2026 (before the first match) |
-| `Team_Elo_PreMatch`, `Opponent_Elo_PreMatch` | Pre-tournament Elo ratings dated 10 June 2026. **TODO: add source and access date** |
-| `Goals_Scored`, dates, fixtures | **TODO: add source.** Goals include extra time and exclude penalty shoot-outs |
+| `Team_Elo_PreMatch`, `Opponent_Elo_PreMatch` | World Football Elo Ratings, https://www.eloratings.net, ratings before the first kickoff (as at 10 June 2026); accessed 15 October 2026 |
+| `Goals_Scored`, dates, fixtures | Jürisoo, M., international_results, https://github.com/martj42/international_results (commit a16ff3e, 20 July 2026). Goals include extra time and exclude penalty shoot-outs |
 | Rest days, matches played | Derived from match dates; only earlier dates are used |
 
 Rank and Elo are fixed pre-tournament values, so they contain no information
 from any World Cup match.
+
+## Data provenance check
+
+```bash
+python Regeration2.2/verify_data_provenance.py
+```
+
+Compares all 208 team rows with the independent results record above (pinned
+commit), recomputes rest days and matches played from match dates, and checks
+FIFA ranks and a stratified sample of Elo ratings against their published
+sources. Writes `Regression_2_2_outputs/provenance_checks.csv`; all 10 checks
+passed on 15 October 2026. Needs internet access to raw.githubusercontent.com.
+
+## Reproducibility record
+
+15 October 2026: fresh clone, new Python 3.13 virtual environment built only from
+`requirements.txt`, script run from the repository root in about 35 seconds.
+All 15 output files were regenerated; every numeric value matched the committed
+outputs to within floating-point rounding (largest difference 4e-13).
+
