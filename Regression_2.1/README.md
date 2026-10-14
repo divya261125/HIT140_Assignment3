@@ -74,3 +74,57 @@ The model achieved a lower MAE than the baseline on the test set. However, predi
 - Host advantage is represented by a simplified indicator.
 - The match dataset includes recorded outcomes, so the evaluation should be interpreted as a retrospective modelling exercise rather than a verified pre-tournament forecast.
 - The original data sources and redistribution permissions still require documentation and verification.
+
+## Exploratory Data Analysis (EDA)
+
+`03_eda_visualisations.py` examines the distribution of the eight explanatory variables, their correlations with goal difference, host advantage, match stages and multicollinearity.
+
+The analysis found strong negative correlations between FIFA rankings and Elo ratings (approximately −0.89), indicating multicollinearity. Variance Inflation Factors (VIFs) were also calculated to assess relationships between explanatory variables.
+
+EDA charts are saved in `Figures/`, and supporting tables are saved in `Results/`.
+
+## Cross-validation and model optimisation
+
+`04_cross_validation_optimisation.py` evaluates the original linear regression using 5-fold cross-validation repeated 10 times, giving 50 validation results.
+
+The script also compares transformations of the explanatory variables and several alternative regression algorithms.
+
+The selected model is Ridge regression with log-transformed FIFA rankings.
+
+### Cross-validation results
+
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Baseline | 1.592 | 2.019 | −0.072 |
+| Original linear regression | 1.306 | 1.629 | 0.275 |
+| Ridge regression + log FIFA ranks | 1.268 | 1.600 | 0.312 |
+
+The Ridge model achieved the lowest cross-validation MAE among the compared models. However, its improvement over the original linear regression was modest and was not statistically significant according to the reported corrected t-test (p = 0.442).
+
+### Holdout test results
+
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Original linear regression | 1.487 | 1.875 | 0.363 |
+| Ridge regression + log FIFA ranks | 1.327 | 1.730 | 0.457 |
+
+## Running all four scripts
+
+Install the required libraries:
+
+```bash
+python -m pip install pandas numpy matplotlib scipy scikit-learn statsmodels
+```
+
+From the `Regression_2.1` folder, run:
+
+```bash
+python 01_prepare_dataset.py
+python 02_regression_model.py
+python 03_eda_visualisations.py
+python 04_cross_validation_optimisation.py
+```
+
+The first script requires the two source CSV files in their documented local folders. If those source files are unavailable, the included `regression21_final_dataset.csv` can still be used to run scripts 02, 03 and 04.
+
+Figures are saved in `Figures/` and evaluation tables in `Results/`.
