@@ -4,6 +4,10 @@
 
 # Import pandas to work with datasets
 import pandas as pd
+from pathlib import Path
+
+# Use the folder containing this script, not the terminal location.
+project_folder = Path(__file__).resolve().parent
 
 
 # --------------------------------------------------
@@ -12,7 +16,7 @@ import pandas as pd
 
 # Read the dataset containing 104 World Cup matches
 matches = pd.read_csv(
-    "Data/processed/worldcup2026_regression21_with_fifa_and_elo.csv"
+    project_folder / "Data" / "processed" / "worldcup2026_regression21_with_fifa_and_elo.csv"
 )
 
 # Check the number of matches
@@ -94,7 +98,7 @@ print(matches["host_advantage"].value_counts())
 
 # Read the historical football dataset
 historical_matches = pd.read_csv(
-    "Data/raw/results.csv"
+    project_folder / "Data" / "raw" / "results.csv"
 )
 
 # Convert text dates into Python dates
@@ -291,7 +295,7 @@ missing_values = matches[explanatory_variables].isnull().sum().sum()
 if missing_values == 0 and len(matches) == 104:
 
     matches.to_csv(
-        "Data/processed/regression21_final_dataset.csv",
+        project_folder / "regression21_final_dataset.csv",
         index=False,
         encoding="utf-8-sig"
     )
