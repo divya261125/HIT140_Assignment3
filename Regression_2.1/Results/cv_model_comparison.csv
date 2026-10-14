@@ -1,0 +1,15 @@
+Stage,Family,Model,CV MAE,CV MAE SD,CV RMSE,CV RMSE SD,CV R-squared,CV R-squared SD,MAE change vs original,95% CI low,95% CI high,p-value (corrected t-test),% folds better than original (MAE)
+Reference,Reference,Baseline (predict the mean),1.592,0.2425,2.0186,0.2759,-0.0717,0.1024,0.2861,0.0212,0.551,0.0348,16.0
+Stage 1: inputs,Linear,Linear regression: original variables,1.3059,0.2144,1.629,0.2385,0.2752,0.2301,0.0,0.0,0.0,1.0,
+Stage 1: inputs,Linear,Linear regression: standardised,1.3059,0.2144,1.629,0.2385,0.2752,0.2301,0.0,0.0,0.0,1.0,0.0
+Stage 1: inputs,Linear,Linear regression: log FIFA ranks,1.2815,0.2043,1.6286,0.2405,0.2753,0.2368,-0.0244,-0.1045,0.0558,0.5444,64.0
+Stage 1: inputs,Linear,Linear regression: Yeo-Johnson transform,1.288,0.2057,1.6217,0.2368,0.2775,0.2491,-0.0179,-0.1025,0.0667,0.6721,66.0
+Stage 1: inputs,Linear,Linear regression: collinear variables removed,1.32,0.2176,1.643,0.2398,0.2649,0.2259,0.0141,-0.0618,0.0899,0.7109,42.0
+Stage 2: algorithms (log FIFA ranks),Linear,Linear regression (least squares),1.2815,0.2043,1.6286,0.2405,0.2753,0.2368,-0.0244,-0.1045,0.0558,0.5444,64.0
+Stage 2: algorithms (log FIFA ranks),Linear,Ridge regression,1.2684,0.1935,1.6,0.2268,0.3117,0.1729,-0.0375,-0.1347,0.0597,0.4416,70.0
+Stage 2: algorithms (log FIFA ranks),Linear,Lasso regression,1.3062,0.1868,1.6423,0.2225,0.2716,0.1895,0.0003,-0.0942,0.0948,0.9951,50.0
+Stage 2: algorithms (log FIFA ranks),Linear,Elastic Net,1.2836,0.1932,1.6117,0.2266,0.3035,0.1625,-0.0223,-0.1249,0.0803,0.6644,54.0
+Stage 2: algorithms (log FIFA ranks),Linear,Huber robust regression,1.2707,0.183,1.6076,0.2225,0.3031,0.1771,-0.0352,-0.1383,0.068,0.4962,66.0
+Stage 2: algorithms (log FIFA ranks),Non-linear benchmark,K-nearest neighbours,1.3063,0.2224,1.6485,0.2504,0.2694,0.1809,0.0005,-0.1615,0.1624,0.9955,56.0
+Stage 2: algorithms (log FIFA ranks),Non-linear benchmark,Random forest,1.296,0.1754,1.6213,0.2146,0.2964,0.1415,-0.0099,-0.1458,0.1259,0.8841,52.0
+Stage 2: algorithms (log FIFA ranks),Non-linear benchmark,Gradient boosting,1.3808,0.1891,1.7234,0.2227,0.1844,0.2727,0.0749,-0.0789,0.2288,0.3326,32.0

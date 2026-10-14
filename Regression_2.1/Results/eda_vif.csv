@@ -1,0 +1,9 @@
+Variable,VIF
+team_fifa_rank,6.74
+team_elo,6.01
+opponent_fifa_rank,5.49
+opponent_elo,5.18
+team_recent_win_percentage,4.48
+team_recent_goal_difference_avg,4.36
+opponent_recent_goals_conceded_avg,1.42
+host_advantage,1.27

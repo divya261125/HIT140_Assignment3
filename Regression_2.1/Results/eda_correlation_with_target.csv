@@ -1,0 +1,9 @@
+Variable,Pearson_r,p_value
+opponent_elo,-0.5189,0.0
+opponent_fifa_rank,0.4867,0.0
+team_fifa_rank,-0.4318,0.0
+team_elo,0.3524,0.0002
+opponent_recent_goals_conceded_avg,0.2972,0.0022
+team_recent_goal_difference_avg,0.2704,0.0055
+team_recent_win_percentage,0.2436,0.0127
+host_advantage,0.1488,0.1315

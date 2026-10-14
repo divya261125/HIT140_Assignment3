@@ -1,0 +1,5 @@
+,,count,mean,std
+Host advantage,Not host,94,0.383,1.968
+Host advantage,Host,10,1.4,2.413
+Stage,Group stage,72,0.597,2.186
+Stage,Knockout,32,0.219,1.601

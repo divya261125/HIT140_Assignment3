@@ -1,0 +1,7 @@
+Evaluation,Model,MAE,RMSE,NRMSE,R-squared
+Single 80/20 split,Baseline (predict the mean),1.8394,2.368,0.2368,-0.0168
+Single 80/20 split,Original linear regression,1.4866,1.8747,0.1875,0.3627
+Single 80/20 split,Ridge regression + log FIFA ranks,1.3268,1.7303,0.173,0.4571
+5-fold CV x 10 (mean),Baseline (predict the mean),1.592,2.0186,0.2019,-0.0717
+5-fold CV x 10 (mean),Original linear regression,1.3059,1.629,0.1629,0.2752
+5-fold CV x 10 (mean),Ridge regression + log FIFA ranks,1.2684,1.6,0.16,0.3117

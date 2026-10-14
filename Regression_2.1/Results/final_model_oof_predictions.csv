@@ -1,0 +1,105 @@
+match_id,team,opponent,round,actual_goal_difference,predicted_goal_difference,residual
+1,Mexico,South Africa,Group stage,2,2.477,-0.477
+2,Korea Republic,Czechia,Group stage,1,0.459,0.541
+3,Canada,Bosnia–Herz,Group stage,0,1.867,-1.867
+4,USA,Paraguay,Group stage,3,0.898,2.102
+5,Qatar,Switzerland,Group stage,0,-0.869,0.869
+6,Brazil,Morocco,Group stage,0,0.179,-0.179
+7,Australia,Türkiye,Group stage,2,-0.542,2.542
+8,Haiti,Scotland,Group stage,-1,-0.702,-0.298
+9,Germany,Curaçao,Group stage,6,2.593,3.407
+10,Netherlands,Japan,Group stage,0,0.124,-0.124
+11,Côte d'Ivoire,Ecuador,Group stage,1,-0.652,1.652
+12,Sweden,Tunisia,Group stage,4,0.654,3.346
+13,Belgium,Egypt,Group stage,0,0.916,-0.916
+14,Spain,Cabo Verde,Group stage,0,3.534,-3.534
+15,Saudi Arabia,Uruguay,Group stage,0,-0.994,0.994
+16,IR Iran,New Zealand,Group stage,0,1.495,-1.495
+17,France,Senegal,Group stage,2,0.844,1.156
+18,Iraq,Norway,Group stage,-3,-0.954,-2.046
+19,Argentina,Algeria,Group stage,3,1.699,1.301
+20,Austria,Jordan,Group stage,2,1.509,0.491
+21,Portugal,Congo DR,Group stage,0,1.841,-1.841
+22,England,Croatia,Group stage,2,0.993,1.007
+23,Ghana,Panama,Group stage,1,-0.077,1.077
+24,Uzbekistan,Colombia,Group stage,-2,-0.969,-1.031
+25,Czechia,South Africa,Group stage,0,0.869,-0.869
+26,Switzerland,Bosnia–Herz,Group stage,3,1.487,1.513
+27,Canada,Qatar,Group stage,6,2.383,3.617
+28,Mexico,Korea Republic,Group stage,1,1.283,-0.283
+29,USA,Australia,Group stage,2,0.813,1.187
+30,Scotland,Morocco,Group stage,-1,-0.652,-0.348
+31,Türkiye,Paraguay,Group stage,-1,0.45,-1.45
+32,Brazil,Haiti,Group stage,3,1.984,1.016
+33,Netherlands,Sweden,Group stage,4,1.345,2.655
+34,Germany,Côte d'Ivoire,Group stage,1,0.963,0.037
+35,Ecuador,Curaçao,Group stage,0,2.526,-2.526
+36,Tunisia,Japan,Group stage,-4,-0.869,-3.131
+37,Spain,Saudi Arabia,Group stage,4,2.384,1.616
+38,Belgium,IR Iran,Group stage,0,0.929,-0.929
+39,Uruguay,Cabo Verde,Group stage,0,2.101,-2.101
+40,New Zealand,Egypt,Group stage,-2,-0.353,-1.647
+41,Argentina,Austria,Group stage,2,1.388,0.612
+42,France,Iraq,Group stage,3,1.816,1.184
+43,Norway,Senegal,Group stage,1,-0.053,1.053
+44,Jordan,Algeria,Group stage,-1,-0.49,-0.51
+45,Portugal,Uzbekistan,Group stage,5,1.51,3.49
+46,England,Ghana,Group stage,0,2.686,-2.686
+47,Panama,Croatia,Group stage,-1,-0.331,-0.669
+48,Colombia,Congo DR,Group stage,1,1.148,-0.148
+49,Switzerland,Canada,Group stage,1,0.263,0.737
+50,Bosnia–Herz,Qatar,Group stage,2,1.059,0.941
+51,Scotland,Brazil,Group stage,-3,-0.678,-2.322
+52,Morocco,Haiti,Group stage,2,1.939,0.061
+53,South Africa,Korea Republic,Group stage,1,-0.658,1.658
+54,Czechia,Mexico,Group stage,-3,-0.568,-2.432
+55,Curaçao,Côte d'Ivoire,Group stage,-2,-0.638,-1.362
+56,Ecuador,Germany,Group stage,1,-0.373,1.373
+57,Tunisia,Netherlands,Group stage,-2,-1.194,-0.806
+58,Japan,Sweden,Group stage,0,1.101,-1.101
+59,Türkiye,USA,Group stage,1,0.95,0.05
+60,Paraguay,Australia,Group stage,0,0.208,-0.208
+61,Norway,France,Group stage,-3,-1.072,-1.928
+62,Senegal,Iraq,Group stage,5,0.968,4.032
+63,Uruguay,Spain,Group stage,-1,-1.621,0.621
+64,Cabo Verde,Saudi Arabia,Group stage,0,0.459,-0.459
+65,Egypt,IR Iran,Group stage,0,-0.131,0.131
+66,New Zealand,Belgium,Group stage,-4,-1.394,-2.606
+67,Croatia,Ghana,Group stage,1,2.417,-1.417
+68,Panama,England,Group stage,-2,-1.881,-0.119
+69,Congo DR,Uzbekistan,Group stage,2,0.236,1.764
+70,Colombia,Portugal,Group stage,0,-0.684,0.684
+71,Jordan,Argentina,Group stage,-2,-2.594,0.594
+72,Algeria,Austria,Group stage,0,-0.034,0.034
+73,South Africa,Canada,Round of 32,-1,-0.466,-0.534
+74,Brazil,Japan,Round of 32,1,0.103,0.897
+75,Germany,Paraguay,Round of 32,0,1.079,-1.079
+76,Netherlands,Morocco,Round of 32,0,0.012,-0.012
+77,Côte d'Ivoire,Norway,Round of 32,-1,-0.314,-0.686
+78,France,Sweden,Round of 32,3,1.928,1.072
+79,Mexico,Ecuador,Round of 32,2,0.514,1.486
+80,England,Congo DR,Round of 32,1,1.612,-0.612
+81,Belgium,Senegal,Round of 32,1,0.63,0.37
+82,USA,Bosnia–Herz,Round of 32,2,1.64,0.36
+83,Spain,Austria,Round of 32,3,1.604,1.396
+84,Portugal,Croatia,Round of 32,1,0.853,0.147
+85,Switzerland,Algeria,Round of 32,2,0.446,1.554
+86,Australia,Egypt,Round of 32,0,0.322,-0.322
+87,Argentina,Cabo Verde,Round of 32,1,3.413,-2.413
+88,Colombia,Ghana,Round of 32,1,2.379,-1.379
+89,Canada,Morocco,Round of 16,-3,-0.464,-2.536
+90,Paraguay,France,Round of 16,-1,-1.156,0.156
+91,Brazil,Norway,Round of 16,-1,0.731,-1.731
+92,Mexico,England,Round of 16,-1,0.115,-1.115
+93,Portugal,Spain,Round of 16,-1,-0.648,-0.352
+94,USA,Belgium,Round of 16,-3,0.389,-3.389
+95,Argentina,Egypt,Round of 16,1,2.309,-1.309
+96,Switzerland,Colombia,Round of 16,0,-0.025,0.025
+97,France,Morocco,Quarter-finals,2,0.455,1.545
+98,Spain,Belgium,Quarter-finals,1,0.669,0.331
+99,Norway,England,Quarter-finals,-1,-0.983,-0.017
+100,Argentina,Switzerland,Quarter-finals,2,1.574,0.426
+101,France,Spain,Semi-finals,-2,-0.557,-1.443
+102,England,Argentina,Semi-finals,-1,-1.016,0.016
+103,France,England,Third-place match,-2,0.009,-2.009
+104,Spain,Argentina,Final,1,-0.864,1.864

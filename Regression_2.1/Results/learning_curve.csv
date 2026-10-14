@@ -1,0 +1,22 @@
+Model,Training matches,CV MAE,CV MAE SD
+Baseline (predict the mean),25,1.6938,0.2686
+Baseline (predict the mean),35,1.6508,0.2713
+Baseline (predict the mean),45,1.6138,0.2646
+Baseline (predict the mean),55,1.5965,0.2444
+Baseline (predict the mean),65,1.5931,0.2437
+Baseline (predict the mean),75,1.5954,0.2433
+Baseline (predict the mean),83,1.5922,0.2399
+Original linear regression,25,1.8335,0.2862
+Original linear regression,35,1.5377,0.2589
+Original linear regression,45,1.4449,0.216
+Original linear regression,55,1.4027,0.2081
+Original linear regression,65,1.36,0.2042
+Original linear regression,75,1.3308,0.214
+Original linear regression,83,1.3057,0.2119
+Ridge regression + log FIFA ranks,25,1.543,0.3367
+Ridge regression + log FIFA ranks,35,1.3717,0.2428
+Ridge regression + log FIFA ranks,45,1.3049,0.2172
+Ridge regression + log FIFA ranks,55,1.2871,0.1973
+Ridge regression + log FIFA ranks,65,1.269,0.199
+Ridge regression + log FIFA ranks,75,1.2721,0.1913
+Ridge regression + log FIFA ranks,83,1.2688,0.1904

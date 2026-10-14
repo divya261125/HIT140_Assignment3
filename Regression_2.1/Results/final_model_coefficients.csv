@@ -1,0 +1,9 @@
+Variable,Original linear regression (standardised),Ridge regression + log FIFA ranks (standardised)
+team_fifa_rank,-0.9123,-0.4223
+opponent_fifa_rank,-0.1488,0.4323
+team_elo,0.043,0.3261
+opponent_elo,-1.0304,-0.4372
+host_advantage,0.1467,0.2381
+team_recent_goal_difference_avg,0.1216,0.0983
+opponent_recent_goals_conceded_avg,0.2499,0.2109
+team_recent_win_percentage,-0.3018,-0.1072

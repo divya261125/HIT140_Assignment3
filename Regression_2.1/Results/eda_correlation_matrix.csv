@@ -1,0 +1,10 @@
+,team_fifa_rank,opponent_fifa_rank,team_elo,opponent_elo,host_advantage,team_recent_goal_difference_avg,opponent_recent_goals_conceded_avg,team_recent_win_percentage,goal_difference
+team_fifa_rank,1.0,-0.097,-0.892,0.034,-0.086,-0.639,-0.022,-0.653,-0.432
+opponent_fifa_rank,-0.097,1.0,0.023,-0.893,0.083,0.088,0.486,0.08,0.487
+team_elo,-0.892,0.023,1.0,0.017,-0.11,0.61,0.018,0.622,0.352
+opponent_elo,0.034,-0.893,0.017,1.0,-0.1,-0.09,-0.434,-0.054,-0.519
+host_advantage,-0.086,0.083,-0.11,-0.1,1.0,-0.075,-0.084,-0.064,0.149
+team_recent_goal_difference_avg,-0.639,0.088,0.61,-0.09,-0.075,1.0,0.025,0.863,0.27
+opponent_recent_goals_conceded_avg,-0.022,0.486,0.018,-0.434,-0.084,0.025,1.0,0.123,0.297
+team_recent_win_percentage,-0.653,0.08,0.622,-0.054,-0.064,0.863,0.123,1.0,0.244
+goal_difference,-0.432,0.487,0.352,-0.519,0.149,0.27,0.297,0.244,1.0
