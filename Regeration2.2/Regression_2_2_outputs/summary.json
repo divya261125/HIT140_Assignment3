@@ -1,0 +1,37 @@
+{
+  "rows": 208,
+  "matches": 104,
+  "teams": 48,
+  "predictors": 8,
+  "missing_predictor_cells": 96,
+  "eda": {
+    "mean": 1.4807692307692308,
+    "variance": 1.9416573764399851,
+    "skew": 1.1487760729635175,
+    "zero_share": 0.2644230769230769
+  },
+  "log_team_rank_corr": -0.36879115705744664,
+  "team_and_opponent_matches_played_identical": true,
+  "team_opponent_rest_days_corr": 0.7927819029528579,
+  "matches_played_range_train": [
+    0,
+    3
+  ],
+  "matches_played_range_holdout": [
+    3,
+    7
+  ],
+  "reported_linear_model": "Ridge + log FIFA rank",
+  "reported_linear_params": "{'model__alpha': 100}",
+  "best_overall_model": "Gradient boosting",
+  "linear_prediction_range": [
+    -0.191742215209044,
+    2.589887606007615
+  ],
+  "ols_adj_r2_train": 0.26260834540172373,
+  "strength_joint_F": 14.188433686543146,
+  "strength_joint_p": 6.465356486231694e-10,
+  "extra_vars_partial_F": 1.2938465944317044,
+  "extra_vars_partial_p": 0.27849990447937795,
+  "gb_wide_grid_best": "{'model__learning_rate': 0.03, 'model__max_depth': 2, 'model__n_estimators': 50}"
+}
