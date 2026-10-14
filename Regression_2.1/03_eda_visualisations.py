@@ -85,8 +85,14 @@ nice_names = {
 
 # encoding="utf-8-sig" removes the hidden character that
 # 01_prepare_dataset.py writes at the start of the file
+from pathlib import Path
+
+# Find the folder where this Python script is saved
+BASE_DIR = Path(__file__).resolve().parent
+
+# Read the final dataset from the same folder
 matches = pd.read_csv(
-    "Data/processed/regression21_final_dataset.csv",
+    BASE_DIR / "regression21_final_dataset.csv",
     encoding="utf-8-sig"
 )
 
