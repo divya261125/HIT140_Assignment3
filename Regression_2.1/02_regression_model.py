@@ -13,6 +13,9 @@ import pandas as pd
 # NumPy helps us calculate the square root
 import numpy as np
 
+# Path helps Python find files and folders
+from pathlib import Path
+
 # This splits our dataset into training and testing groups
 from sklearn.model_selection import train_test_split
 
@@ -27,9 +30,12 @@ from sklearn.metrics import r2_score
 
 # STEP 2: Load our dataset
 
-# Read the CSV file prepared in our first Python script
+# Find the folder where this Python script is saved
+project_folder = Path(__file__).resolve().parent
+
+# Read the CSV file from the same folder
 matches = pd.read_csv(
-    "Data/processed/regression21_final_dataset.csv"
+    project_folder / "regression21_final_dataset.csv"
 )
 
 # Check how many matches we have
@@ -170,15 +176,19 @@ print("\nIntercept:", round(model.intercept_, 3))
 
 # STEP 10: Save our results
 
+# Create the Results folder if it does not already exist
+results_folder = project_folder / "Results"
+results_folder.mkdir(parents=True, exist_ok=True)
+
 # Save the actual and predicted goal differences
 comparison.to_csv(
-    "Results/regression21_predictions.csv",
+    results_folder / "regression21_predictions.csv",
     index=False
 )
 
 # Save the regression coefficients
 coefficients.to_csv(
-    "Results/regression21_coefficients.csv",
+    results_folder / "regression21_coefficients.csv",
     index=False
 )
 
@@ -190,7 +200,7 @@ results = pd.DataFrame({
 
 # Save the model results
 results.to_csv(
-    "Results/regression21_model_results.csv",
+    results_folder / "regression21_model_results.csv",
     index=False
 )
 
