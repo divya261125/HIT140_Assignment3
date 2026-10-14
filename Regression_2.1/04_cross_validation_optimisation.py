@@ -18,7 +18,7 @@
 # --------------------------------------------------
 
 import os
-
+from pathlib import Path
 import pandas as pd
 import numpy as np
 
@@ -98,8 +98,10 @@ nice_names = {
 # STEP 2: Load the final dataset
 # --------------------------------------------------
 
+BASE_DIR = Path(__file__).resolve().parent
+
 matches = pd.read_csv(
-    "Data/processed/regression21_final_dataset.csv",
+    BASE_DIR / "regression21_final_dataset.csv",
     encoding="utf-8-sig"
 )
 
