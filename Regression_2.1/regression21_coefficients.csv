@@ -1,9 +1,0 @@
-Variable,Coefficient
-team_fifa_rank,-0.05246959986607491
-opponent_fifa_rank,-0.019078735278221678
-team_elo,-0.0010715214104319373
-opponent_elo,-0.006754080596492367
-host_advantage,0.6908358937332952
-team_recent_goal_difference_avg,0.24979481422428404
-opponent_recent_goals_conceded_avg,0.5023737635996084
-team_recent_win_percentage,-0.0190069122899422
